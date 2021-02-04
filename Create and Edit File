@@ -1,0 +1,121 @@
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ cd linuxtutorialwork
+[ec2-user@ip-172-31-85-10 linuxtutorialwork]$ ls
+foo
+[ec2-user@ip-172-31-85-10 linuxtutorialwork]$ cd foo
+[ec2-user@ip-172-31-85-10 foo]$ ls
+bar
+[ec2-user@ip-172-31-85-10 foo]$ ls bar
+[ec2-user@ip-172-31-85-10 foo]$ touch mytest
+[ec2-user@ip-172-31-85-10 foo]$ ls
+bar  mytest
+[ec2-user@ip-172-31-85-10 foo]$ ls -ltr
+total 0
+drwxrwxr-x 2 ec2-user ec2-user 6 Feb  4 02:16 bar
+-rw-rw-r-- 1 ec2-user ec2-user 0 Feb  4 20:02 mytest
+[ec2-user@ip-172-31-85-10 foo]$ ls -F
+bar/  mytest
+[ec2-user@ip-172-31-85-10 foo]$ cp mytest/home/ec2-user
+cp: missing destination file operand after ‘mytest/home/ec2-user’
+Try 'cp --help' for more information.
+[ec2-user@ip-172-31-85-10 foo]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ cp mytest /home/ec2-user
+cp: cannot stat ‘mytest’: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ cd foo
+-bash: cd: foo: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ cd /linuxtutorialwork
+-bash: cd: /linuxtutorialwork: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ cd /linuctutorialwork
+-bash: cd: /linuctutorialwork: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ cd linuxtutorialwork
+[ec2-user@ip-172-31-85-10 linuxtutorialwork]$ cd foo
+[ec2-user@ip-172-31-85-10 foo]$ ls
+bar  mytest
+[ec2-user@ip-172-31-85-10 foo]$ cp mytest /home/ec2-user
+[ec2-user@ip-172-31-85-10 foo]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork  mytest
+[ec2-user@ip-172-31-85-10 ~]$ touch mytest1
+[ec2-user@ip-172-31-85-10 ~]$ ls -ltr
+total 0
+drwxrwxr-x 3 ec2-user ec2-user 17 Feb  4 02:16 linuxtutorialwork
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 02:33 ankita
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 16:51 AnkitaTest
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 16:54 Ankita.txt
+-rw-rw-r-- 1 ec2-user ec2-user  0 Feb  4 20:05 mytest
+-rw-rw-r-- 1 ec2-user ec2-user  0 Feb  4 20:05 mytest1
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork  mytest  mytest1
+[ec2-user@ip-172-31-85-10 ~]$ mv mytest1 /linuxtutorial/foo
+mv: cannot move ‘mytest1’ to ‘/linuxtutorial/foo’: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ mv mytest1 linuxtutorial/foo
+mv: cannot move ‘mytest1’ to ‘linuxtutorial/foo’: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ mv mytest1 linuxtutorialwork/foo
+[ec2-user@ip-172-31-85-10 ~]$ mv mytest1 /linuxtutorialwork/foo
+mv: cannot stat ‘mytest1’: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ cd foo
+-bash: cd: foo: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ cd linuxtutorialwork
+[ec2-user@ip-172-31-85-10 linuxtutorialwork]$ ls
+foo
+[ec2-user@ip-172-31-85-10 linuxtutorialwork]$ cd foo
+[ec2-user@ip-172-31-85-10 foo]$ ls
+bar  mytest  mytest1
+[ec2-user@ip-172-31-85-10 foo]$ mv foo to ankita_2
+mv: target ‘ankita_2’ is not a directory
+[ec2-user@ip-172-31-85-10 foo]$ rm foo to ankita_2
+rm: cannot remove ‘foo’: No such file or directory
+rm: cannot remove ‘to’: No such file or directory
+rm: cannot remove ‘ankita_2’: No such file or directory
+[ec2-user@ip-172-31-85-10 foo]$ mv foo to foo1
+mv: target ‘foo1’ is not a directory
+[ec2-user@ip-172-31-85-10 foo]$ cd !
+-bash: cd: !: No such file or directory
+[ec2-user@ip-172-31-85-10 foo]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ mv foo to foo1
+mv: target ‘foo1’ is not a directory
+[ec2-user@ip-172-31-85-10 ~]$ mkdir foo1
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  foo1  linuxtutorialwork  mytest
+[ec2-user@ip-172-31-85-10 ~]$ mv foo to foo1
+mv: cannot stat ‘foo’: No such file or directory
+mv: cannot stat ‘to’: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ rmdir foo1
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork  mytest
+[ec2-user@ip-172-31-85-10 ~]$ cd /mytest
+-bash: cd: /mytest: No such file or directory
+[ec2-user@ip-172-31-85-10 ~]$ cd /etc
+[ec2-user@ip-172-31-85-10 etc]$ cd /home
+[ec2-user@ip-172-31-85-10 home]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ vi mytest
+[ec2-user@ip-172-31-85-10 ~]$ vi mytest
+[ec2-user@ip-172-31-85-10 ~]$ ls mytest
+mytest
+[ec2-user@ip-172-31-85-10 ~]$ cat mytest
+To test editor
+
+Ankita
+
+Test
+
+Content added
+
+
+File Saved
+
+
+1st Lab
+
+
+#this is to add comments
+
+
+[ec2-user@ip-172-31-85-10 ~]$ less mytest
