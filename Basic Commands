@@ -1,0 +1,629 @@
+Using username "ec2-user".
+Authenticating with public key "imported-openssh-key"
+Last login: Thu Feb  4 16:58:26 2021 from c-69-251-176-169.hsd1.md.comcast.net
+
+       __|  __|_  )
+       _|  (     /   Amazon Linux 2 AMI
+      ___|\___|___|
+
+https://aws.amazon.com/amazon-linux-2/
+[ec2-user@ip-172-31-85-10 ~]$ pwd
+/home/ec2-user
+[ec2-user@ip-172-31-85-10 ~]$ cd /
+[ec2-user@ip-172-31-85-10 /]$ pwd
+/
+[ec2-user@ip-172-31-85-10 /]$ ls
+bin   dev  home  lib64  media  opt   root  sbin  sys  usr
+boot  etc  lib   local  mnt    proc  run   srv   tmp  var
+[ec2-user@ip-172-31-85-10 /]$ cd /bin
+[ec2-user@ip-172-31-85-10 bin]$ ls
+[                                   nl-fib-lookup
+a2p                                 nl-link-enslave
+ab                                  nl-link-ifindex2name
+ac                                  nl-link-list
+acpi_listen                         nl-link-name2ifindex
+addr2line                           nl-link-release
+alias                               nl-link-set
+amazon-linux-extras                 nl-link-stats
+amazon-ssm-agent                    nl-list-caches
+apropos                             nl-list-sockets
+ar                                  nl-monitor
+arch                                nl-neigh-add
+as                                  nl-neigh-delete
+at                                  nl-neigh-list
+atq                                 nl-neightbl-list
+atrm                                nl-pktloc-lookup
+attr                                nl-qdisc-add
+aulast                              nl-qdisc-delete
+aulastlog                           nl-qdisc-list
+ausyscall                           nl-route-add
+auvirt                              nl-route-delete
+awk                                 nl-route-get
+aws                                 nl-route-list
+aws_completer                       nl-rule-list
+base64                              nl-tctree-list
+basename                            nl-util-addr
+bash                                nm
+bashbug                             nohup
+bashbug-64                          nproc
+batch                               nroff
+bc                                  nsenter
+bg                                  nslookup
+blkiomon                            nss-policy-check
+blkparse                            nsupdate
+blkrawverify                        numfmt
+blktrace                            objcopy
+bno_plot.py                         objdump
+bond2team                           od
+bootctl                             oldfind
+btrace                              on_ac_power
+btrecord                            open
+btreplay                            openssl
+btt                                 openvt
+bunzip2                             os-prober
+busctl                              p11-kit
+bzcat                               package-cleanup
+bzcmp                               passwd
+bzdiff                              paste
+bzgrep                              pathchk
+bzip2                               peekfd
+bzip2recover                        perl
+bzless                              perl5.16.3
+bzmore                              perlbug
+c2ph                                perldoc
+cal                                 perlthanks
+ca-legacy                           pgawk
+captoinfo                           pgrep
+cat                                 pic
+catchsegv                           piconv
+catman                              pidstat
+cd                                  pinentry
+centrino-decode                     pinentry-curses
+certutil                            ping
+c++filt                             ping6
+chacl                               pinky
+chage                               pk12util
+chardetect                          pkcs1-conv
+chattr                              pkg-config
+chcon                               pkill
+chgrp                               pl2pm
+chmem                               pldd
+chmod                               plymouth
+chown                               pmap
+chronyc                             pm-is-supported
+chrt                                pod2html
+chvt                                pod2man
+cifsiostat                          pod2text
+cksum                               pod2usage
+clear                               post-grohtml
+cloud-id                            powernow-k8-decode
+cloud-init                          pr
+cloud-init-per                      preconv
+cmp                                 pre-grohtml
+cmsutil                             printenv
+col                                 printf
+colcrt                              prlimit
+colrm                               prtstat
+column                              ps
+comm                                psed
+command                             psfaddtable
+consolehelper                       psfgettable
+coredumpctl                         psfstriptable
+cp                                  psfxtable
+cpio                                pstree
+cpupower                            pstree.x11
+crlutil                             pstruct
+crontab                             ptx
+csh                                 pwd
+csplit                              pwdx
+csslint-0.6                         pwmake
+curl                                pwscore
+cut                                 pydoc
+cvtsudoers                          pyrsa-decrypt
+date                                pyrsa-decrypt-2
+db_archive                          pyrsa-decrypt-bigfile
+db_checkpoint                       pyrsa-decrypt-bigfile-2
+db_deadlock                         pyrsa-encrypt
+db_dump                             pyrsa-encrypt-2
+db_dump185                          pyrsa-encrypt-bigfile
+db_hotbackup                        pyrsa-encrypt-bigfile-2
+db_load                             pyrsa-keygen
+db_log_verify                       pyrsa-keygen-2
+db_printlog                         pyrsa-priv2pub
+db_recover                          pyrsa-priv2pub-2
+db_replicate                        pyrsa-sign
+db_stat                             pyrsa-sign-2
+db_tuner                            pyrsa-verify
+db_upgrade                          pyrsa-verify-2
+dbus-cleanup-sockets                pystache
+dbus-daemon                         pystache-test
+dbus-monitor                        python
+dbus-run-session                    python2
+dbus-send                           python2.7
+dbus-test-tool                      python2.7-config
+dbus-update-activation-environment  python2-config
+dbus-uuidgen                        python-config
+db_verify                           quota
+dc                                  quotasync
+dd                                  ranlib
+deallocvt                           raw
+debuginfo-install                   rdate
+delv                                read
+df                                  readelf
+dgawk                               readlink
+diff                                realpath
+diff3                               recode-sr-latin
+dig                                 red
+dir                                 rename
+dircolors                           renice
+dirname                             repoclosure
+dmesg                               repodiff
+dnsdomainname                       repo-graph
+domainname                          repomanage
+dracut                              repoquery
+du                                  repo-rss
+dumpkeys                            reposync
+dwp                                 repotrack
+easy_install                        reset
+easy_install-2.7                    resizecons
+ec2-metadata                        rev
+echo                                rm
+ed                                  rmail
+egrep                               rmail.postfix
+eject                               rmdir
+elfedit                             rnano
+enable-ec2-spot-hibernation         rngtest
+env                                 rpcgen
+envsubst                            rpm
+eqn                                 rpm2cpio
+ex                                  rpmdb
+expand                              rpmkeys
+expr                                rpmquery
+factor                              rpmverify
+fallocate                           rst2html
+false                               rst2latex
+fc                                  rst2man
+fg                                  rst2odt
+fgconsole                           rst2odt_prepstyles
+fgrep                               rst2pseudoxml
+file                                rst2s5
+fincore                             rst2xetex
+find                                rst2xml
+find2perl                           rstpep2html
+findmnt                             rsync
+find-repos-of-install               rsyslog-recover-qi.pl
+fipscheck                           runcon
+fipshmac                            run-parts
+flock                               rvi
+fmt                                 rview
+fold                                rvim
+free                                s2p
+funzip                              sadf
+gapplication                        sar
+gawk                                scl
+gdbm_dump                           scl_enabled
+gdbm_load                           scl_source
+gdbmtool                            scp
+gdbus                               screen
+gencat                              script
+genl-ctrl-list                      scriptreplay
+geoiplookup                         sdiff
+geoiplookup6                        secon
+geoipupdate                         sed
+geqn                                seq
+getconf                             setarch
+getent                              setfacl
+getfacl                             setfattr
+getfattr                            setfont
+getkeycodes                         setkeycodes
+getopt                              setleds
+getopts                             setmetamode
+gettext                             setpriv
+gettext.sh                          setserial
+gio                                 setsid
+gio-querymodules-64                 setterm
+glib-compile-schemas                setup
+gmake                               setup-nsssysinit
+gneqn                               setup-nsssysinit.sh
+gnroff                              setvtrgb
+gpasswd                             sexp-conv
+gpg                                 sftp
+gpg2                                sg
+gpg-agent                           sh
+gpgconf                             sha1sum
+gpg-connect-agent                   sha224sum
+gpg-error                           sha256sum
+gpgparsemail                        sha384sum
+gpgsplit                            sha512sum
+gpgv                                show-changed-rco
+gpgv2                               showconsolefont
+gpg-zip                             show-installed
+gpic                                showkey
+gprof                               shred
+grep                                shuf
+groff                               signver
+grops                               simc_lsmplugin
+grotty                              sim_lsmplugin
+groups                              size
+growpart                            skill
+grub2-editenv                       slabtop
+grub2-file                          sleep
+grub2-fstest                        slogin
+grub2-glue-efi                      snice
+grub2-kbdcomp                       soelim
+grub2-menulst2cfg                   sort
+grub2-mkfont                        sotruss
+grub2-mkimage                       splain
+grub2-mklayout                      split
+grub2-mknetdir                      sprof
+grub2-mkpasswd-pbkdf2               sqlite3
+grub2-mkrelpath                     ssh
+grub2-mkrescue                      ssh-add
+grub2-mkstandalone                  ssh-agent
+grub2-render-label                  ssh-copy-id
+grub2-script-check                  ssh-keygen
+grub2-syslinux2cfg                  ssh-keyscan
+gsettings                           ssltap
+gsoelim                             ssm-agent-worker
+gtar                                ssm-cli
+gtbl                                ssm-document-worker
+gtroff                              ssm-session-logger
+gunzip                              ssm-session-worker
+gzexe                               stapbpf
+gzip                                stapdyn
+h2ph                                stap-merge
+head                                stap-report
+hexdump                             staprun
+hibagent                            stapsh
+hibinit-agent                       stat
+host                                stdbuf
+hostid                              strace
+hostname                            strace-log-merge
+hostnamectl                         strings
+htdbm                               strip
+htdigest                            stty
+htpasswd                            su
+httxt2dbm                           sudo
+hunspell                            sudoedit
+i386                                sudoreplay
+iconv                               sum
+id                                  sync
+idiag-socket-details                systemctl
+idn                                 systemd-analyze
+igawk                               systemd-ask-password
+info                                systemd-cat
+infocmp                             systemd-cgls
+infokey                             systemd-cgtop
+infotocap                           systemd-coredumpctl
+install                             systemd-delta
+ionice                              systemd-detect-virt
+iostat                              systemd-escape
+ipcalc                              systemd-firstboot
+ipcmk                               systemd-hwdb
+ipcrm                               systemd-inhibit
+ipcs                                systemd-loginctl
+iptables-xml                        systemd-machine-id-setup
+isosize                             systemd-notify
+jobs                                systemd-nspawn
+join                                systemd-path
+journalctl                          systemd-run
+jp.py                               systemd-stdio-bridge
+jp.py-2                             systemd-sysv-convert
+jp.py-2.7                           systemd-tmpfiles
+jsonpointer                         systemd-tty-ask-password-agent
+json_reformat                       tabs
+jsonschema                          tac
+json_verify                         tail
+kbdinfo                             tapestat
+kbd_mode                            tar
+kbdrate                             taskset
+kernel-install                      tbl
+keyctl                              tcptraceroute
+kill                                tcsh
+killall                             teamd
+kmod                                teamdctl
+last                                teamnl
+lastb                               tee
+lastcomm                            test
+lastlog                             tic
+lchfn                               time
+lchsh                               timedatectl
+ld                                  timeout
+ld.bfd                              tload
+ldd                                 toe
+ld.gold                             top
+less                                touch
+lessecho                            tput
+lesskey                             tr
+lesspipe.sh                         tracepath
+lexgrog                             tracepath6
+link                                traceroute
+linux32                             traceroute6
+linux64                             troff
+linux-boot-prober                   true
+ln                                  truncate
+loadkeys                            trust
+loadunimap                          tset
+locale                              tsort
+localectl                           tty
+localedef                           turbostat
+locate                              tzselect
+logger                              udevadm
+login                               ul
+loginctl                            umask
+logname                             umount
+logresolve                          unalias
+look                                uname
+ls                                  uname26
+lsattr                              unexpand
+lsblk                               unicode_start
+lscpu                               unicode_stop
+lsinitrd                            uniq
+lsipc                               unlink
+lslocks                             unlz4
+lslogins                            unshare
+lsmcli                              unxz
+lsmd                                unzip
+lsmem                               unzipsfx
+lsns                                update-ca-trust
+lua                                 updatedb
+luac                                update-mime-database
+lz4                                 uptime
+lz4c                                urlgrabber
+lz4cat                              users
+machinectl                          usleep
+mailq                               utmpdump
+mailq.postfix                       uuidgen
+make                                vdir
+makedb                              verify_blkparse
+man                                 verifytree
+mandb                               vi
+manpath                             view
+mapscrn                             vim
+mcookie                             vimdiff
+md5sum                              vimtutor
+mdig                                vlock
+mesg                                vmstat
+mkdir                               w
+mkfifo                              wait
+mkinitrd                            wall
+mknod                               watch
+mktemp                              watchgnupg
+modutil                             wc
+more                                wdctl
+mount                               wget
+mountpoint                          whatis
+mpstat                              whereis
+msgattrib                           which
+msgcat                              whiptail
+msgcmp                              who
+msgcomm                             whoami
+msgconv                             write
+msgen                               x86_64
+msgexec                             x86_energy_perf_policy
+msgfilter                           xargs
+msgfmt                              xgettext
+msggrep                             xmlcatalog
+msghack                             xmllint
+msginit                             xmlwf
+msgmerge                            xxd
+msgunfmt                            xz
+msguniq                             xzcat
+mv                                  xzcmp
+namei                               xzdec
+nano                                xzdiff
+needs-restarting                    xzegrep
+neqn                                xzfgrep
+netstat                             xzgrep
+nettle-hash                         xzless
+nettle-lfib-stream                  xzmore
+newaliases                          yes
+newaliases.postfix                  ypdomainname
+newgrp                              yum
+nf-ct-add                           yum-builddep
+nf-ct-list                          yum-config-manager
+nf-exp-add                          yum-debug-dump
+nf-exp-delete                       yum-debug-restore
+nf-exp-list                         yumdownloader
+nf-log                              yum-groups-manager
+nf-monitor                          zcat
+nf-queue                            zcmp
+nfsiostat-sysstat                   zdiff
+ngettext                            zegrep
+nice                                zfgrep
+nisdomainname                       zforce
+nl                                  zgrep
+nl-addr-add                         zip
+nl-addr-delete                      zipcloak
+nl-addr-list                        zipgrep
+nl-class-add                        zipinfo
+nl-class-delete                     zipnote
+nl-classid-lookup                   zipsplit
+nl-class-list                       zless
+nl-cls-add                          zmore
+nl-cls-delete                       znew
+nl-cls-list                         zsoelim
+[ec2-user@ip-172-31-85-10 bin]$ cd /etc
+[ec2-user@ip-172-31-85-10 etc]$ ls
+acpi                     httpd              rc1.d
+adjtime                  idmapd.conf        rc2.d
+aliases                  image-id           rc3.d
+aliases.db               init.d             rc4.d
+alternatives             inittab            rc5.d
+amazon                   inputrc            rc6.d
+anacrontab               iproute2           rc.d
+at.deny                  issue              rc.local
+audisp                   issue.net          request-key.conf
+audit                    krb5.conf          request-key.d
+bash_completion.d        krb5.conf.d        resolv.conf
+bashrc                   ld.so.cache        rpc
+binfmt.d                 ld.so.conf         rpm
+chkconfig.d              ld.so.conf.d       rsyncd.conf
+chrony.conf              libaudit.conf      rsyslog.conf
+chrony.keys              libnl              rsyslog.d
+cifs-utils               libuser.conf       rwtab
+cloud                    locale.conf        rwtab.d
+cron.d                   localtime          sasl2
+cron.daily               login.defs         scl
+cron.deny                logrotate.conf     screenrc
+cron.hourly              logrotate.d        securetty
+cron.monthly             lsm                security
+crontab                  lvm                selinux
+cron.weekly              machine-id         services
+csh.cshrc                magic              sestatus.conf
+csh.login                mailcap            setuptool.d
+dbus-1                   man_db.conf        shadow
+default                  mime.types         shadow-
+depmod.d                 mke2fs.conf        shells
+dhcp                     modprobe.d         skel
+DIR_COLORS               modules-load.d     ssh
+DIR_COLORS.256color      motd               ssl
+DIR_COLORS.lightbgcolor  mtab               statetab
+dracut.conf              my.cnf             statetab.d
+dracut.conf.d            my.cnf.d           subgid
+e2fsck.conf              nanorc             subuid
+environment              netconfig          sudo.conf
+ethertypes               NetworkManager     sudoers
+exports                  networks           sudoers.d
+exports.d                nfs.conf           sudo-ldap.conf
+filesystems              nfsmount.conf      sysconfig
+fstab                    nsswitch.conf      sysctl.conf
+gcrypt                   nsswitch.conf.bak  sysctl.d
+GeoIP.conf               openldap           systemd
+GeoIP.conf.default       opt                system-release
+gnupg                    os-release         system-release-cpe
+GREP_COLORS              pam.d              terminfo
+groff                    passwd             tmpfiles.d
+group                    passwd-            trusted-key.key
+group-                   pkcs11             udev
+grub2.cfg                pki                updatedb.conf
+grub.d                   plymouth           update-motd.d
+gshadow                  pm                 vimrc
+gshadow-                 popt.d             virc
+gss                      postfix            wgetrc
+gssproxy                 ppp                X11
+hibagent-config.cfg      prelink.conf.d     xdg
+hibinit-config.cfg       printcap           xinetd.d
+host.conf                profile            yum
+hostname                 profile.d          yum.conf
+hosts                    protocols          yum.repos.d
+hosts.allow              python
+hosts.deny               rc0.d
+[ec2-user@ip-172-31-85-10 etc]$ cd /home
+[ec2-user@ip-172-31-85-10 home]$ ls
+ec2-user
+[ec2-user@ip-172-31-85-10 home]$ ls -l
+total 0
+drwx------ 7 ec2-user ec2-user 170 Feb  4 16:54 ec2-user
+[ec2-user@ip-172-31-85-10 home]$ cd /tmp
+[ec2-user@ip-172-31-85-10 tmp]$ ls
+systemd-private-444d38b4cb7a418db22207df8a926531-chronyd.service-sAMLQk
+systemd-private-444d38b4cb7a418db22207df8a926531-httpd.service-r9RVjT
+[ec2-user@ip-172-31-85-10 tmp]$ cd /opt
+[ec2-user@ip-172-31-85-10 opt]$ ls
+aws  rh
+[ec2-user@ip-172-31-85-10 opt]$ cd /usr
+[ec2-user@ip-172-31-85-10 usr]$ ls
+bin  etc  games  include  lib  lib64  libexec  local  sbin  share  src  tmp
+[ec2-user@ip-172-31-85-10 usr]$ cd /usr/local
+[ec2-user@ip-172-31-85-10 local]$ ls
+bin  etc  games  include  lib  lib64  libexec  sbin  share  src
+[ec2-user@ip-172-31-85-10 local]$ cd /usr/local/bin
+[ec2-user@ip-172-31-85-10 bin]$ ls
+[ec2-user@ip-172-31-85-10 bin]$ ls -al
+total 0
+drwxr-xr-x  2 root root   6 Apr  9  2019 .
+drwxr-xr-x 12 root root 131 Jan 26 04:14 ..
+[ec2-user@ip-172-31-85-10 bin]$ cd /var
+[ec2-user@ip-172-31-85-10 var]$ cd /media
+[ec2-user@ip-172-31-85-10 media]$ cd /srv
+[ec2-user@ip-172-31-85-10 srv]$ ls
+[ec2-user@ip-172-31-85-10 srv]$ ls -al
+total 0
+drwxr-xr-x  2 root root   6 Apr  9  2019 .
+dr-xr-xr-x 18 root root 257 Feb  4 01:40 ..
+[ec2-user@ip-172-31-85-10 srv]$ cd .
+[ec2-user@ip-172-31-85-10 srv]$ cd ..
+[ec2-user@ip-172-31-85-10 /]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ man echo
+[ec2-user@ip-172-31-85-10 ~]$ echo testing Man command
+testing Man command
+[ec2-user@ip-172-31-85-10 ~]$ echo $PATH
+/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/home/ec2-user/.local/bin:/home/ec2-user/bin
+[ec2-user@ip-172-31-85-10 ~]$ which cat
+/usr/bin/cat
+[ec2-user@ip-172-31-85-10 ~]$ cd -
+/
+[ec2-user@ip-172-31-85-10 /]$ cd ~
+[ec2-user@ip-172-31-85-10 ~]$ ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ ls -lat
+total 16
+-rw------- 1 ec2-user ec2-user 1033 Feb  4 16:59 .bash_history
+drwx------ 7 ec2-user ec2-user  170 Feb  4 16:54 .
+drwxrwxr-x 2 ec2-user ec2-user    6 Feb  4 16:54 Ankita.txt
+drwxrwxr-x 2 ec2-user ec2-user    6 Feb  4 16:51 AnkitaTest
+drwxrwxr-x 2 ec2-user ec2-user    6 Feb  4 02:33 ankita
+drwxrwxr-x 3 ec2-user ec2-user   17 Feb  4 02:16 linuxtutorialwork
+drwx------ 2 ec2-user ec2-user   29 Feb  4 01:40 .ssh
+drwxr-xr-x 3 root     root       22 Feb  4 01:40 ..
+-rw-r--r-- 1 ec2-user ec2-user   18 Jul 15  2020 .bash_logout
+-rw-r--r-- 1 ec2-user ec2-user  193 Jul 15  2020 .bash_profile
+-rw-r--r-- 1 ec2-user ec2-user  231 Jul 15  2020 .bashrc
+[ec2-user@ip-172-31-85-10 ~]$ ls -l
+total 0
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 02:33 ankita
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 16:51 AnkitaTest
+drwxrwxr-x 2 ec2-user ec2-user  6 Feb  4 16:54 Ankita.txt
+drwxrwxr-x 3 ec2-user ec2-user 17 Feb  4 02:16 linuxtutorialwork
+[ec2-user@ip-172-31-85-10 ~]$ sudo su -root
+su: invalid option -- 'r'
+Try 'su --help' for more information.
+[ec2-user@ip-172-31-85-10 ~]$ sudo su cat
+su: user cat does not exist
+[ec2-user@ip-172-31-85-10 ~]$ sudo su
+[root@ip-172-31-85-10 ec2-user]# ls
+ankita  AnkitaTest  Ankita.txt  linuxtutorialwork
+[root@ip-172-31-85-10 ec2-user]# cd /home
+[root@ip-172-31-85-10 home]# ls
+ec2-user
+[root@ip-172-31-85-10 home]# sudo su
+[root@ip-172-31-85-10 home]# cd ~
+[root@ip-172-31-85-10 ~]# sudo su
+[root@ip-172-31-85-10 ~]# ls
+[root@ip-172-31-85-10 ~]# ls
+[root@ip-172-31-85-10 ~]# cd ..
+[root@ip-172-31-85-10 /]# cd /usr
+[root@ip-172-31-85-10 usr]# sudo su -root
+su: invalid option -- 'r'
+Try 'su --help' for more information.
+[root@ip-172-31-85-10 usr]# su --help
+
+Usage:
+ su [options] [-] [<user> [<argument>...]]
+
+Change the effective user ID and group ID to that of <user>.
+A mere - implies -l.  If <user> is not given, root is assumed.
+
+Options:
+ -m, -p, --preserve-environment  do not reset environment variables
+ -g, --group <group>             specify the primary group
+ -G, --supp-group <group>        specify a supplemental group
+
+ -, -l, --login                  make the shell a login shell
+ -c, --command <command>         pass a single command to the shell with -c
+ --session-command <command>     pass a single command to the shell with -c
+                                   and do not create a new session
+ -f, --fast                      pass -f to the shell (for csh or tcsh)
+ -s, --shell <shell>             run <shell> if /etc/shells allows it
+
+ -h, --help     display this help and exit
+ -V, --version  output version information and exit
+
+For more details see su(1).
+[root@ip-172-31-85-10 usr]# cd ~
+[root@ip-172-31-85-10 ~]# sudo su ~
+su: user /root does not exist
+[root@ip-172-31-85-10 ~]# ls -lF
+total 0
+[root@ip-172-31-85-10 ~]#
