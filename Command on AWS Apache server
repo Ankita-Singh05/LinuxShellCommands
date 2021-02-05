@@ -1,0 +1,18 @@
+
+[ec2-user@ip-172-31-85-10 ~]$ whoami
+ec2-user
+[ec2-user@ip-172-31-85-10 ~]$ yum install -y httpd.x86_64
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+You need to be root to perform this command.
+[ec2-user@ip-172-31-85-10 ~]$ sudo su
+[root@ip-172-31-85-10 ec2-user]#  yum install -y httpd.x86_84
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+amzn2-core                                               | 3.7 kB     00:00
+amzn2extra-docker                                        | 3.0 kB     00:00
+No package httpd.x86_84 available.
+Error: Nothing to do
+[root@ip-172-31-85-10 ec2-user]#  yum install -y httpd.x86_84
+Loaded plugins: extras_suggestions, langpacks, priorities, update-motd
+No package httpd.x86_84 available.
+Error: Nothing to do
+[root@ip-172-31-85-10 ec2-user]# echo "Hello world" from $(hostname -f)* > /var/www/html/index.html
